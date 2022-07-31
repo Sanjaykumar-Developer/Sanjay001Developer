@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Resume</title>
+        <link rel="stylesheet" href="resumestyle.css">
+        <link rel="stylesheet" href="aboutstyle.css"/>
+        <link rel="icon" href="image/log.jpeg" type="image/x-icon">
+    </head>
+    <body>
+        <div class="word">
+        <h1><span>_</span><span>_</span><span>R</span><span>e</span><span>s</span><span>u</span><span>m</span><span>e</span><span>_</span><span>_</span></h1>
+        </div>
+        <script> 
+            const spans = document.querySelectorAll('.word span');
+            spans.forEach((span, idx) => {
+            span.addEventListener('click', (e) => {
+            e.target.classList.add('active');
+            });
+            span.addEventListener('animationend', (e) => {
+            e.target.classList.remove('active');
+            });
+  
+            
+            setTimeout(() => {
+            span.classList.add('active');
+            }, 750 * (idx+1))
+            });
+        </script>
+        <div class="re">
+            <img src="image/resume.jpg" alt="my__resume" width="1000" height="1200" draggable="false"><p> click button to Download my resume</p>
+            <a href="file/R.Sanjaykumar_resume.pdf" download="R.Sanjaykumar_resume.pdf"><h6><img src="image/download.jpeg" alt="download" width="250" height="50" draggable="false"></h6></a>
+        </div>
+    </body>
+</html>

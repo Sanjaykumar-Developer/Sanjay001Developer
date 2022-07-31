@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Project</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="image/log.jpeg" type="image/x-icon">
+        <link rel="stylesheet" href="aboutstyle.css"/>
+        <link rel="stylesheet" href="projectstyle.css"/>
+    </head>
+    <body>
+        <div class="word">
+        <h1><span><</span><span>-</span><span>P</span><span>r</span><span>o</span><span>j</span><span>e</span><span>c</span><span>t</span><span>s</span><span>-</span><span>></span></h1>
+        </div>
+        <script> 
+            const spans = document.querySelectorAll('.word span');
+            spans.forEach((span, idx) => {
+            span.addEventListener('click', (e) => {
+            e.target.classList.add('active');
+            });
+            span.addEventListener('animationend', (e) => {
+            e.target.classList.remove('active');
+            });
+  
+            
+            setTimeout(() => {
+            span.classList.add('active');
+            }, 750 * (idx+1))
+            });
+        </script>    <br><h1 class="na">Face Recognition System</h1>
+        <div class="cardpro">
+            
+            <p>
+                <b>Face Recognition System:</b><br>
+                programming language : Python<br><br>
+                           This is capable of detecting, 
+                            identifying or verifying humans face by 
+                            an image or video capture using a digital Camera.
+                            And we implemented the following features in the system:  <br>  <br>                                    
+                            <strong>Face recognition with name</strong> - by saving the picture with name of the person and detecting it in live feed.<br><br>
+                            <strong>Age and Gender Detection</strong> - using pretrained caffemodel(mage classification or image segmentation model).<br><br>
+                            <strong>Face Emotion Detection</strong> - using tensorflow, pretrained models.<br><br>
+                            <strong>Face Mask detection</strong> - using machine learning pretrained models of Mask and No Mask.<br><br>
+                            <strong>Face landmarks</strong> - using dlib map the facial points on a person's face.<br><br>
+            </p>
+         </div>
+           
+        <h2 class="name">Elder Monitoring Device </h2>
+        <div class="card">
+                    
+                    <p class='emd'><b>Elder Monitoring Device</b><br>
+                        This is capable of monitors the pulse rate of the elder especially when they are alone.<br><br><br>
+
+                            When the pulse rate is increase the elder ones gets altered, 
+                            the device immediately sends notification of emergency
+                            alertness to the concerned guardian.<br><br><br>
+ 
+                            If the concerned guardian didn't respond then the information
+                            is passed to nearby healthcare providers as emergency.<br><br><br>
+                            The person in need , when alone can get immediate first aid and 
+                            their life will be saved.     
+                            
+                    </p>
+        </div>
+            
+        
+    </body>
+</html>
