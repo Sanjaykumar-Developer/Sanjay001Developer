@@ -1,0 +1,498 @@
+@import
+url('https://fonts.googleapis.com/css2?family=Alfa+Slab+one&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Thambi');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  
+}
+ul{
+    list-style: none;
+}
+body{
+    background: #040404;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    diplay : flex;
+    
+}
+.header{
+    position: relative;
+    weight: 100%;
+    height: 100vh;
+    
+}
+.header .details{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+}
+.boxname{
+    margin-left: 600px;
+    display: flex;
+}
+.button1{
+    display: flex;
+    margin: 20px;
+    background: white;
+   
+    margin-left: 10px;
+    letter-spacing: 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-size: 0 100%;  
+   background-position: right bottom;
+    transition:.5s;
+    
+}
+.button1:hover{
+    background-color: gray;
+    color: white;
+    background-size: 100% 100%;
+}
+.button1:after{
+    background-color: gray; 
+}
+
+
+.header .contact  ul li {
+    margin-left: 1000px;
+   color: white;
+    font: Times new roman;
+    
+}
+.header .contact h3{
+    position: relative;
+    margin-left: 20px;
+    font-family: candara;
+    font-size: 20px;
+    font-family: 'copperplate gothic';
+    position: relative;
+    font-style: bold;
+    display: inline-block;
+    color: lightgrey;
+}
+.contact1 a{
+    font-size: 20px;
+    color: black;
+    margin-left: 30px;
+    font-family:  comic sans ms,cursive;
+    padding: 8px 15px;
+    background-color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.contact1 a:hover{
+    background: #ff0000;
+    color: white;
+   
+}
+.img{
+    width: 20px;
+    height: 30px;
+}
+
+.hrm{
+    font-size: 15px;
+    color: black;
+    margin-left: 30px;
+    font-family:  comic sans ms,cursive;
+    padding: 8px 15px;
+    background-color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+.hrm:hover{
+    background: orange;
+    color:white;
+    
+}
+.hiri{
+    display: flex;
+    margin-left: 800px;
+   
+    
+}
+.header .name{
+    color: whitesmoke;
+    margin-top: 100px;
+    margin-left: 100px;
+    font-size: 30px;
+}
+.header .my{
+    position: relative;
+    margin-left: 100px;
+    font-size: 50px;
+    margin-top: 20px;
+    color: white
+}
+.my, .my span {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+.my span { display: inline-block }
+
+.my { animation-name: my }
+@keyframes my {
+    from {
+        opacity: 600;
+        transform: translateY(100%);
+    }
+    to { opacity: 100 }
+}
+
+
+.header .name{
+    position: relative;
+    -webkit-box-reflect: below -20px liner-gradient(transparent,rgba(0,0,0,.2));
+    font-size: 60px;
+}
+.header .name span{
+    font-family: 'Baloo Thambi', cursive;
+    
+    display: inline-block;
+    color: white;
+}
+.name> span{
+  text-transform: uppercase;
+  animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0%, 100% {
+    color: #FFF;
+    text-shadow: 0 0 10px #0652DD, 0 0 50px #0652DD, 0 0 100px #0652DD;
+  }
+  
+  10%, 90% {
+    color: #111;
+    text-shadow: none;
+  }
+}
+
+.name> span:nth-child(2) {
+  animation-delay: 0.25s;
+}
+
+.name > span:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.name > span:nth-child(4) {
+  animation-delay: 0.75s;
+}
+
+.name > span:nth-child(5) {
+  animation-delay: 1s;
+}
+
+.name > span:nth-child(6) {
+  animation-delay: 1.25s;
+}
+
+.name > span:nth-child(7) {
+  animation-delay: 1.5s;
+}
+.name > span:nth-child(8) {
+  animation-delay: 1.5s;
+}
+
+@keyframes span{
+    0%,80%{
+        transform: rotateY(360deg)
+    }
+}
+p{
+    color: white;
+    margin-left: 500px;
+    line-height: 10px;
+    margin-top: -30px;
+}
+
+
+
+
+@media (max-width: 768px){
+    body{
+    background: #040404;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    diplay : flex;
+    
+}
+.header{
+    position: relative;
+    weight: 100%;
+    height: 100vh;
+    
+}
+.boxname{
+    margin-left: 50px;
+}
+.header .details{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+}
+.button1{
+    display: flex;
+    margin: 3px;
+    background: white;
+    background-image:  linear-gradient(#1095c1,#1095c1);
+    margin-left: 5px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+    margin-top: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-size: 0 100%;  
+   background-position: right bottom;
+    transition:.5s;
+    
+}
+.button1:hover{
+    background-color: skyblue;
+    color: white;
+    background-size: 100% 100%;
+}
+.button1:after{
+    background-color: #ff0000; 
+}
+
+
+
+.header .contact h3{
+    position: relative;
+    margin-left: 10px;
+    font-family: candara;
+    font-size: 10px;
+    font-family: 'copperplate gothic';
+    position: relative;
+    font-style: bold;
+    display: inline-block;
+    color: lightgrey;
+}
+.contact1 a{
+    font-size: 10px;
+    color: black;
+    
+    font-family:  comic sans ms,cursive;
+    padding: 8px 15px;
+    background-color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.contact1 a:hover{
+    background: #ff0000;
+    color: white;
+   
+}
+.hrm{
+    font-size: 10px;
+    color: black;
+    margin-left: 10px;
+    font-family:  comic sans ms,cursive;
+    padding: 8px 15px;
+    background-color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: -5px;
+}
+.hrm:hover{
+    background: orange;
+    color:white;
+    
+}
+.hiri{
+    margin-left: 50px;
+    margin-top: 150px;
+    display: flex;
+}
+
+.header .name{
+    color: whitesmoke;
+    margin-top: 50px;
+    margin-left: 10px;
+    font-size: 35px;
+}
+.header .my{
+    position: relative;
+    margin-left: 10px;
+    font-size: 35px;
+    margin-top: 70px;
+    color: white
+}
+p{
+    
+    color:white;
+    text-align: center;
+    font-size: 10px;
+    margin-left: 10px;
+}
+.img{
+    width: 15px;
+    height: 20px;
+}
+
+
+}
+
+
+
+@media (min-width: 768px)and (max-width: 1200px){
+body{
+    background: #040404;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    diplay : flex;
+    
+}
+.boxname{
+    margin-left: 50px;
+}
+.header{
+    position: relative;
+    weight: 100%;
+    height: 100vh;
+    
+}
+.header .details{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+}
+.button1{
+    display: flex;
+    margin: 2px;
+    background: white;
+    background-image:  linear-gradient(#1095c1,#1095c1);
+    margin-left: 50px;
+    letter-spacing: 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-size: 0 100%;  
+   background-position: right bottom;
+    transition:.5s;
+    
+}
+.button1:hover{
+    background-color: skyblue;
+    color: white;
+    background-size: 100% 100%;
+}
+.button1:after{
+    background-color: #ff0000; 
+}
+
+
+.header .contact  ul li {
+    margin-left: 1000px;
+   color: white;
+    font: Times new roman;
+    
+}
+.header .contact h3{
+    position: relative;
+    margin-left: 20px;
+    font-family: candara;
+    font-size: 20px;
+    font-family: 'copperplate gothic';
+    position: relative;
+    font-style: bold;
+    display: inline-block;
+    color: lightgrey;
+}
+.contact1 a{
+    font-size: 30px;
+    color: black;
+    margin-left: 30px;
+    font-family:  comic sans ms,cursive;
+    padding: 8px 15px;
+    background-color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.contact1 a:hover{
+    background: #ff0000;
+    color: white;
+   
+}
+.hrm{
+    font-size: 20px;
+    color: black;
+    margin-left: 30px;
+    font-family:  comic sans ms,cursive;
+    padding: 8px 15px;
+    background-color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+.hrm:hover{
+    background: orange;
+    color:white;
+    
+}
+.hiri{
+    display: flex;
+    margin-left: 200px;
+    margin-top: 200px;
+   
+    
+}   
+.header .name{
+    color: whitesmoke;
+    margin-top: 200px;
+    margin-left: 100px;
+    font-size: 50px;
+}
+.header .my{
+    position: relative;
+    margin-left: 100px;
+    font-size: 50px;
+    margin-top: 100px;
+    color: white
+}
+p{
+    
+    color:white;
+    text-align: center;
+    font-size: 15px;
+    margin-left: 50px;
+    margin-top: -30px;
+}
+}
+   
+

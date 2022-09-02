@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UV-Compatible" content="IE=edge">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>Projects</title>
+        <link rel="stylesheet" href="cardprojectstyle.css"/>
+    </head>
+    <body>
+        <h1 class="word">
+        <span><</span><span>-</span><span>P</span><span>r</span><span>o</span><span>j</span><span>e</span><span>c</span><span>t</span><span>s</span><span>-</span><span>></span>
+        </h1>
+         <script> 
+            const spans = document.querySelectorAll('.word span');
+            spans.forEach((span, idx) => {
+            span.addEventListener('click', (e) => {
+            e.target.classList.add('active');
+            });
+            span.addEventListener('animationend', (e) => {
+            e.target.classList.remove('active');
+            });
+  
+            
+            setTimeout(() => {
+            span.classList.add('active');
+            }, 750 * (idx+1))
+            });
+                                </script>   <br><br><br>
+                                
+       <div class="container">
+           <div class="box">
+               <span></span>
+               <div class="content">
+                   <h2>Face Recognition System</h2>
+                   <p>programming language : Python<br>
+                           This is capable of detecting, 
+                            identifying or verifying humans face by 
+                            an image or video capture using a digital Camera.
+                   -Face recognition with name,Age and Gender,Face Emotion,Face Mask detection,Face landmarks</p>
+                   <a href="#">Read More</a>
+               </div>
+           </div>
+           <div class="box">
+               <span></span>
+               <div class="content">
+                   <h2>Elder Monitoring Device</h2>
+                   <p>This is capable of monitors the pulse rate of the elder especially when they are alone.<br>
+
+                            When the pulse rate is increase the elder ones gets altered, 
+                            the device immediately sends notification of emergency
+                            alertness to the concerned guardian.</p>
+                   <a href="#">Read More</a>
+               </div>
+           </div>
+           <div class="box">
+               <span></span>
+               <div class="content">
+                   <h2>Personal Web Page</h2>
+                   <p>I created  the personal web site for improving my skills. The web site display my personal information.Using an HTML,CSS,Javascript to build my web page. </p>
+                   <a href="#">Read More</a>
+               </div>
+           </div>
+       </div>
+    </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>about</title>
+        <link rel="stylesheet" href="aboutstyle.css"/>
+        <link rel="icon" href="image/log.jpeg" type="image/x-icon">
+        
+    </head>
+    <body>
+        <div class="word">
+            <h3><span>A</span><span>B</span><span>O</span><span>U</span><span>T</span><span>_</span><span>_</span><span style="color: orange">M</span><span style="color: orange">E</span></h3>
+        </div>      
+        <script> 
+            const spans = document.querySelectorAll('.word span');
+            spans.forEach((span, idx) => {
+            span.addEventListener('click', (e) => {
+            e.target.classList.add('active');
+            });
+            span.addEventListener('animationend', (e) => {
+            e.target.classList.remove('active');
+            });
+  
+            
+            setTimeout(() => {
+            span.classList.add('active');
+            }, 750 * (idx+1))
+            });
+        </script>
+        <div class="hole">    
+            <div class="full">
+            
+            <div class="info">    
+                <h3 class="he">Hi, There!</h3>
+                <h1 class='name'>I am <span style="color: #ff0058">Sanjaykumar</span></h1><p class="me">I'm final year student of <b style="color:#ffcf4d">B.E Computer Science & Engineering</b>.<br>I interest in web development and software development(Java).
+                </p>
+                <div class="per">
+                    <h4>Personal Details:</h4>
+                    <div class="det">
+                        <p>
+                            <span>Name</span>  : Sanjaykumar.R<br><br>
+                            <span>Age</span>   : 21<br><br>
+                            <span>Gender</span>: Male<br><br>
+                        </p>
+                        <p>
+                            <span>Location</span>      : TamilNadu, India.<br><br>
+                            <span>Language </span>     : Tamil, English.<br><br>
+                            <span>Marital Status</span>: single.<br><br>
+                        </p>
+                    </div>   
+                </div>
+                <div class="button2">
+                    <button >Download my Resume &#128073;</button>
+                <a href="file/R.Sanjaykumar.resume.pdf" download="R.Sanjaykumar_resume.pdf">Download CV</a>
+                </div>
+            </div>
+                 <div class="container">
+                <h1>Skills</h1>
+                <div class="bar java" data-skill="JAVA"></div><br>
+                <div class="bar back c" data-skill="C"></div><br>
+                <div class="bar back cpp" data-skill="C++"></div><br>
+                <div class="bar front js" data-skill="JavaScript"></div><br>
+                <div class="bar front html" data-skill="HTML5"></div><br>
+                <div class="bar front css" data-skill="CSS"></div><br>
+                <div class="bar front jsp" data-skill="JSP"></div>
+            </div>
+            </div>
+           
+        </div>
+    </body>
+</html>
